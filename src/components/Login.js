@@ -14,7 +14,24 @@ export default ({onReceive}) => {
     }
     return (
         <div className='login'>
-            <button onClick={handleGoogleLogin}>Login with Google</button>
+            <div className='login--container'>
+                <img src='https://marcas-logos.net/wp-content/uploads/2020/03/WHATSAPP-LOGO.png'
+                     alt=''
+                />
+                
+                <div className='login--text'>
+                    <h2>Welcome to WhatsApp</h2>
+                </div>
+                    <button onClick={handleGoogleLogin}>
+                        Sign In With Google
+                    </button>
+
+                    <div className='logoGmail'>
+                            <img src='https://logodownload.org/wp-content/uploads/2018/03/gmail-logo-2-1.png'
+                                alt=''
+                            />
+                    </div>
+            </div>
         </div>
     );
 }

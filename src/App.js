@@ -1,4 +1,4 @@
-import React, { useState, useeffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import ChatListItem from './components/ChatListItem';
@@ -29,11 +29,12 @@ export default () => {
   ]);
 
   const [activeChat, setActiveChat] = useState({});
-  const [user, setUser] = useState({
-    id: 1234,
-    avatar: 'https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png',
-    name: 'Daniel Lisboa'
-  });
+  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState({
+  //   id: 1234,
+  //   avatar: 'https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png',
+  //   name: 'Daniel Lisboa'
+  // });
   const [showNewChat, setShowNewChat] = useState(false);
   const handleNewChat = () => {
     setShowNewChat(true);
